@@ -205,6 +205,10 @@ section{position:relative;padding:30px 22px 40px}
 .quote mark{background:linear-gradient(transparent 58%,var(--pink-200) 58%);color:inherit;padding:0}
 .closing .mascot-end{position:relative;z-index:1;width:min(62%,240px);margin:34px auto 0;aspect-ratio:640/565}
 .ground{display:block;width:100%;height:44px;margin-top:-30px;position:relative;z-index:2}
+.emg{display:flex;gap:10px;align-items:flex-start;text-align:left;margin-top:12px;padding:14px 16px;border-radius:16px;background:var(--blue);color:#fff}
+.emg .ic{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--pink-700);font-size:16px;font-weight:900;line-height:1}
+.emg p{margin:0;font-size:14px;line-height:1.6;font-weight:600;word-break:keep-all}
+.emg b{display:block;font-size:15px;font-weight:800;margin-bottom:2px}
 
 footer{background:var(--blue-darker);color:#fff;text-align:center;padding:26px 20px calc(30px + env(safe-area-inset-bottom))}
 footer .host{font-size:12px;color:rgba(255,255,255,.72);font-weight:600}
@@ -279,7 +283,6 @@ footer strong{display:block;font-size:17px;font-weight:800;margin-top:4px;letter
 .zone-list small{display:block;font-size:12px;font-weight:600;color:var(--ink-2)}
 .floor.z{margin:0 -14px}
 .floor.z img{aspect-ratio:1100/586}
-.floor-card .zoom{display:block;text-align:center;margin-top:8px;font-size:12px;color:var(--ink-2)}
 .zmk{position:absolute;transform:translate(-50%,-50%);display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--ink);color:var(--ink);font-size:12px;font-weight:800;box-shadow:0 0 0 3px #fff,0 3px 8px rgba(0,0,0,.2)}
 .zmk.main{width:30px;height:30px;font-size:14px;animation:zpulse 2.2s ease-out infinite}
 @keyframes zpulse{0%{box-shadow:0 0 0 3px #fff,0 0 0 3px rgba(165,213,226,.9)}100%{box-shadow:0 0 0 3px #fff,0 0 0 16px rgba(165,213,226,0)}}
@@ -456,7 +459,6 @@ footer strong{display:block;font-size:17px;font-weight:800;margin-top:4px;letter
         <span class="zmk" style="left:85.2%;top:30%;background:#FD7E7E">4</span>
         <span class="zmk" style="left:57.4%;top:40%;background:#B696CD">5</span>
       </div>
-      <span class="zoom">두 손가락으로 확대해서 볼 수 있어요</span>
       <ul class="zone-list">
         <li class="wide"><span class="n" style="background:#A5D5E2">1</span><span>발표대회장<small>컨벤션홀</small></span></li>
         <li><span class="n" style="background:#C6E5A6">2</span><span>등록대 및 체험공간<small>로비</small></span></li>
@@ -464,6 +466,7 @@ footer strong{display:block;font-size:17px;font-weight:800;margin-top:4px;letter
         <li><span class="n" style="background:#FD7E7E">4</span><span>식당</span></li>
         <li><span class="n" style="background:#B696CD">5</span><span>화장실</span></li>
       </ul>
+      <div class="emg" role="note"><span class="ic" aria-hidden="true">+</span><p><b>응급·의료 안내</b>컨디션 이상·부상 시 즉시 등록대(운영본부)로 방문해 주세요.</p></div>
     </div>
   </section>
 
